@@ -19,9 +19,10 @@ header {
   text-align: center;
   padding: 20px 0;
   margin-bottom: 30px;
-  background-color: #1a237e;
-  color: white;
-  border-radius: 5px;
+  background: linear-gradient(90deg, #1976d2 0%, #64b5f6 100%);
+  color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.1);
 }
 
 header h1 {
@@ -70,12 +71,18 @@ section h3 {
   color: #0066cc;
 }
 
-.activity-card p {
-  margin-bottom: 8px;
-}
-
-.form-group {
+.activity-card {
   margin-bottom: 15px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #e3f2fd;
+  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.08);
+  transition: box-shadow 0.2s, background 0.2s;
+}
+.activity-card:hover {
+  box-shadow: 0 4px 16px rgba(25, 118, 210, 0.18);
+  background-color: #bbdefb;
 }
 
 .form-group label {
@@ -94,18 +101,18 @@ section h3 {
 }
 
 button {
-  background-color: #1a237e;
+  background-color: #1976d2;
   color: white;
   border: none;
   padding: 10px 15px;
   font-size: 16px;
-  border-radius: 5px;
+  border-radius: 6px;
   cursor: pointer;
-  transition: background-color 0.2s;
+  transition: background 0.2s;
 }
 
 button:hover {
-  background-color: #3949ab;
+  background-color: #1565c0;
 }
 
 .message {
